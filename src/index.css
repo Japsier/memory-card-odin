@@ -3,8 +3,70 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-color: #fde68a;
 }
+.app {
+  position: relative;
+  min-height: 100%;
+}
+header {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #fcd34d;
+}
+ul {
+  margin: auto;
+  padding: 2rem;
+
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+  max-width: 1800px;
+  justify-self: center;
+  align-self: center;
+  min-height: 100%;
+}
+li {
+  padding: 0;
+}
+@media (min-width: 600px) {
+  ul {grid-template-columns: repeat(2, 1fr);}
+}
+@media (min-width: 900px) {
+  ul {grid-template-columns: repeat(3, 1fr);}
+}
+@media (min-width: 1200px) {
+  ul {grid-template-columns: repeat(4, 1fr);}
+}
+@media (min-width: 1500px) {
+  ul {grid-template-columns: repeat(6, 1fr);}
+}
+.Card {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #fcd34d;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: 500d;
+}
+.Card:hover {
+  cursor: pointer;
+}
+.Card > img {
+  height: 16rem;
+  width: 11rem;
+  border-radius: 10px;
+}
+
 
 

@@ -1,8 +1,20 @@
 import './App.css';
 import Header from "./Component/Header"
-import { useEffect, useState } from 'react';
+import { createElement, useEffect, useState } from 'react';
 import Card from "./Component/Card"
 import uniqid from "uniqid"
+import heineken from "./heineken.jpg"
+import budweiser from "./budweiser.jpg"
+import birraMoretti from "./birraMoretti.jpg"
+import estrella from "./estrella.jpg"
+import guinness from "./guinness.jpg"
+import bavaria from "./bavaria.jpg"
+import desperados from "./desperados.jpg"
+import modelo from "./modelo.jpg"
+import corona from "./corona.jpg"
+import stellaArtois from "./stellaArtois.jpg"
+import budlight from "./budlight.jpg"
+import carlsberg from "./carlsberg.jpg"
 
 function App() {
   const cardObj = (cardImg, cardName) => {
@@ -17,18 +29,18 @@ function App() {
   const [score, setScore] = useState(0)
   let [highScore, sethighScore] = useState(0)
   const [cards, setCards] = useState([
-    cardObj("img", "heineken"),
-    cardObj("img", "carlsberg"),
-    cardObj("img", "budweiser"),
-    cardObj("img", "Birra Morreti"),
-    cardObj("img", "Estrella"),
-    cardObj("img", "Guinness"),
-    cardObj("img", "Bavaria"),
-    cardObj("img", "Desperados"),
-    cardObj("img", "name"),
-    cardObj("img", "Corona"),
-    cardObj("img", "name"),
-    cardObj("img", "name"),
+    cardObj(heineken, "heineken"),
+    cardObj(carlsberg, "carlsberg"),
+    cardObj(budweiser, "budweiser"),
+    cardObj(birraMoretti, "Birra Moretti"),
+    cardObj(estrella, "Estrella"),
+    cardObj(guinness, "Guinness"),
+    cardObj(bavaria, "Bavaria"),
+    cardObj(desperados, "Desperados"),
+    cardObj(modelo, "modelo"),
+    cardObj(corona, "Corona"),
+    cardObj(stellaArtois, "Stella Artois"),
+    cardObj(budlight, "Bud Light"),
   ])
   const gameOver = () => {
     if (score > highScore) {

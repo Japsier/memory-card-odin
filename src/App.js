@@ -15,7 +15,7 @@ function App() {
   }
 
   const [score, setScore] = useState(0)
-  const [highScore, sethighScore] = useState(0)
+  let [highScore, sethighScore] = useState(0)
   const [cards, setCards] = useState([
     cardObj("img", "heineken"),
     cardObj("img", "carlsberg"),
@@ -30,15 +30,34 @@ function App() {
     cardObj("img", "name"),
     cardObj("img", "name"),
   ])
+  const gameOver = () => {
+    if (score > highScore) {
+      sethighScore(score)
+    }
+    setScore(0)
+    cards.forEach(element => {
+      element.clicked = false
+    })
+  }
 
   const cardClicked = (e) => {
-    let id = e.target.id
-    console.log(e.target)
+    let id = e.currentTarget.id
+    console.log(e.currentTarget)
     console.log("clicked id: " + id)
+
+    cards.forEach(element => {
+      if (element.id === id) {
+        if (element.clicked) {
+          gameOver()
+          return
+        } 
+        element.clicked = true
+        setScore(score + 1)
+      }
+    })
 
     let usedNumbers = []
     let shuffleArr = []
-    console.log(cards)
     while(usedNumbers.length !== 12) {
       let random = Math.floor(Math.random() * 12)
       if (!usedNumbers.includes(random)) {
@@ -55,7 +74,6 @@ function App() {
       <Header score={score} highScore={highScore}/>
       <ul className='cardDisplay'>
         {cards.map((element) => {
-          console.log(element.id)
           return <Card 
           key = {element.id} 
           card={element} 

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/memory-card-odin/static/css/main.08f136e8.css",
+    "main.js": "/memory-card-odin/static/js/main.3c11fb51.js",
+    "static/media/heineken.jpg": "/memory-card-odin/static/media/heineken.ac157c8bc919835424f8.jpg",
+    "static/media/corona.jpg": "/memory-card-odin/static/media/corona.b5a9e3e45a8411cee137.jpg",
+    "static/media/bavaria.jpg": "/memory-card-odin/static/media/bavaria.c3731eaa69d8322978f0.jpg",
+    "static/media/budlight.jpg": "/memory-card-odin/static/media/budlight.b16aa0928b9e13b1d010.jpg",
+    "static/media/budweiser.jpg": "/memory-card-odin/static/media/budweiser.56c0c2c30cdca045bffa.jpg",
+    "static/media/modelo.jpg": "/memory-card-odin/static/media/modelo.c7466b73bf72d5c1c764.jpg",
+    "static/media/desperados.jpg": "/memory-card-odin/static/media/desperados.0c9300a7c2a4ce859730.jpg",
+    "static/media/guinness.jpg": "/memory-card-odin/static/media/guinness.603bfd5e060b93bb9f4a.jpg",
+    "static/media/estrella.jpg": "/memory-card-odin/static/media/estrella.c024849b0c524c4ee080.jpg",
+    "static/media/carlsberg.jpg": "/memory-card-odin/static/media/carlsberg.21894c725dcb66fc7e0e.jpg",
+    "static/media/stellaArtois.jpg": "/memory-card-odin/static/media/stellaArtois.76e48c44bc79debf7962.jpg",
+    "static/media/birraMoretti.jpg": "/memory-card-odin/static/media/birraMoretti.3dc8deb352246ddfc31e.jpg",
+    "index.html": "/memory-card-odin/index.html",
+    "main.08f136e8.css.map": "/memory-card-odin/static/css/main.08f136e8.css.map",
+    "main.3c11fb51.js.map": "/memory-card-odin/static/js/main.3c11fb51.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08f136e8.css",
+    "static/js/main.3c11fb51.js"
+  ]
+}

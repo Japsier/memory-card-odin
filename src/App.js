@@ -29,15 +29,15 @@ function App() {
   const [score, setScore] = useState(0)
   let [highScore, sethighScore] = useState(0)
   const [cards, setCards] = useState([
-    cardObj(heineken, "heineken"),
-    cardObj(carlsberg, "carlsberg"),
-    cardObj(budweiser, "budweiser"),
+    cardObj(heineken, "Heineken"),
+    cardObj(carlsberg, "Carlsberg"),
+    cardObj(budweiser, "Budweiser"),
     cardObj(birraMoretti, "Birra Moretti"),
     cardObj(estrella, "Estrella"),
     cardObj(guinness, "Guinness"),
     cardObj(bavaria, "Bavaria"),
     cardObj(desperados, "Desperados"),
-    cardObj(modelo, "modelo"),
+    cardObj(modelo, "Modelo"),
     cardObj(corona, "Corona"),
     cardObj(stellaArtois, "Stella Artois"),
     cardObj(budlight, "Bud Light"),
@@ -84,17 +84,19 @@ function App() {
   return (
     <div className="App">
       <Header score={score} highScore={highScore}/>
-      <ul className='cardDisplay'>
-        {cards.map((element) => {
-          return <Card 
-          key = {element.id} 
-          card={element} 
-          htmlID={element.id}
-          onClick={cardClicked}
-          />
-        })
-        }
-      </ul>
+      <main>
+        <ul className='cardDisplay'>
+          {cards.map((element) => {
+            return <Card 
+            key = {element.id} 
+            card={element} 
+            htmlID={element.id}
+            onClick={cardClicked}
+            />
+          })
+          }
+        </ul>
+      </main>
       
     </div>
   );

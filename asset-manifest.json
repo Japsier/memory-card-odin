@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/memory-card-odin/static/css/main.08f136e8.css",
-    "main.js": "/memory-card-odin/static/js/main.3c11fb51.js",
+    "main.css": "/memory-card-odin/static/css/main.6356d282.css",
+    "main.js": "/memory-card-odin/static/js/main.b2e3b27b.js",
     "static/media/heineken.jpg": "/memory-card-odin/static/media/heineken.ac157c8bc919835424f8.jpg",
     "static/media/corona.jpg": "/memory-card-odin/static/media/corona.b5a9e3e45a8411cee137.jpg",
     "static/media/bavaria.jpg": "/memory-card-odin/static/media/bavaria.c3731eaa69d8322978f0.jpg",
@@ -15,11 +15,11 @@
     "static/media/stellaArtois.jpg": "/memory-card-odin/static/media/stellaArtois.76e48c44bc79debf7962.jpg",
     "static/media/birraMoretti.jpg": "/memory-card-odin/static/media/birraMoretti.3dc8deb352246ddfc31e.jpg",
     "index.html": "/memory-card-odin/index.html",
-    "main.08f136e8.css.map": "/memory-card-odin/static/css/main.08f136e8.css.map",
-    "main.3c11fb51.js.map": "/memory-card-odin/static/js/main.3c11fb51.js.map"
+    "main.6356d282.css.map": "/memory-card-odin/static/css/main.6356d282.css.map",
+    "main.b2e3b27b.js.map": "/memory-card-odin/static/js/main.b2e3b27b.js.map"
   },
   "entrypoints": [
-    "static/css/main.08f136e8.css",
-    "static/js/main.3c11fb51.js"
+    "static/css/main.6356d282.css",
+    "static/js/main.b2e3b27b.js"
   ]
 }
